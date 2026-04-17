@@ -1,0 +1,38 @@
+/* Styling Text Properties */
+p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #2c3e50;
+}
+
+/* Styling List Properties */
+ol, ul {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styling Div Elements */
+div {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Styling Table Properties */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes double borders */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}

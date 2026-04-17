@@ -1,0 +1,42 @@
+/* General Navigation Styles */
+#dept-nav {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal menu */
+}
+
+.main-menu > li {
+    position: relative; /* Anchor for the dropdown */
+}
+
+.main-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+}
+
+/* Show dropdown on hover */
+.main-menu li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
