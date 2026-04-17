@@ -1,0 +1,14 @@
+<a href="https://dsc.du.ac.in" id="hoverLink">It shows the mouse events</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$("#hoverLink").mouseover(function(){
+    $("body").css("background-color", "green"); // [cite: 95]
+    $(this).text("I'm green now");
+});
+
+$("#hoverLink").mouseout(function(){
+    $("body").css("background-color", "red"); // [cite: 97]
+    $(this).text("I'm red now");
+});
+</script>
