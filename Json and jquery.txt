@@ -1,0 +1,104 @@
+Q1
+<!-- HTML -->
+<p id="message">Original Text Content</p>
+<button id="actionBtn">Update Text</button>
+
+<!-- jQuery -->
+<script>
+$(document).ready(function(){
+    $("#actionBtn").click(function(){
+        $("#message").text("The content has been updated!"); // Changes text
+        $("#message").css("color", "red"); // Changes color
+    });
+});
+</script>
+
+Q2
+
+$(document).ready(function(){
+    // 1. Select by ID
+    $("#myId").css("border", "1px solid red");
+
+    // 2. Select by Class
+    $(".myClass").hide();
+
+    // 3. Select by Element Name
+    $("p").text("All paragraphs updated");
+
+    // 4. Select by Attribute Name
+    $("[type='text']").val("Default Value");
+});
+
+Q3
+function isWeekend(dateString) {
+    var date = new Date(dateString);
+    var day = date.getDay();
+    
+    // Returns true if Saturday (6) or Sunday (0)
+    return (day === 6 || day === 0);
+}
+
+// Example usage:
+$(document).ready(function(){
+    var testDate = "2026-05-10"; // A Sunday
+    if(isWeekend(testDate)) {
+        console.log("It's a weekend!");
+    } else {
+        console.log("It's a weekday.");
+    }
+});
+
+Q4
+$(document).ready(function(){
+    // Focus and Blur
+    $("#inputField").focus(function(){
+        $(this).css("background", "yellow");
+    }).blur(function(){
+        $(this).css("background", "white");
+    });
+
+    // Change
+    $("#selectMenu").change(function(){
+        alert("Value changed to: " + $(this).val());
+    });
+
+    // Click and Double Click
+    $("#btn").click(function(){
+        console.log("Single click detected");
+    });
+    $("#btn").dblclick(function(){
+        console.log("Double click detected");
+    });
+
+    // Submit
+    $("#myForm").submit(function(e){
+        e.preventDefault(); // Prevents page refresh
+        alert("Form submitted!");
+    });
+});
+
+Q5
+
+<!-- HTML -->
+<a href="https://dsc.du.ac.in" id="eventLink">It shows the mouse events</a>
+
+<!-- jQuery -->
+<script>
+$(document).ready(function(){
+    $("#eventLink").mouseover(function(){
+        // Change body to green and update text
+        $("body").css("background-color", "green");
+        $(this).text("I'm green now");
+    });
+
+    $("#eventLink").mouseout(function(){
+        // Change body to red and update text
+        $("body").css("background-color", "red");
+        $(this).text("I'm red now");
+    });
+});
+</script>
+
+
+
+
